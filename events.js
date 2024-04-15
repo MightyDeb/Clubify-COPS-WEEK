@@ -10,7 +10,7 @@ clubs.forEach((club)=>{
   if(c!=0){
     clubhtml+=`<div class="box">
     <h3>${club.naming}</h3>
-    <img src="${club.live_image}">
+    <img src="Pictures/${club.live_image}">
     <p>${club.live_news}</p>
     <p>${club.live_date}</p>
     <p>${club.live_time}</p>
@@ -32,7 +32,7 @@ setTimeout(function(){
 document.querySelectorAll('.interest').forEach((button)=>{
   button.addEventListener('click',() => {
     const classname=button.dataset.classname;
-    console.log(classname);
+    //console.log(classname);
     let htmlcode='';
     let match;
     clubs.forEach((item)=>{
@@ -43,14 +43,14 @@ document.querySelectorAll('.interest').forEach((button)=>{
       if(match.live===0){
         htmlcode=`<div class="box interest">
                 <h3>${match.naming}</h3>
-                <img src="${match.logo}">
+                <img src="Pictures/${match.logo}">
                 <p>NO LIVE EVENTS</p> </div>`
         //console.log(htmlcode);
         availability(clubinterest,match,htmlcode);
       }else{
         htmlcode=`<div class="box interest">
         <h3>${match.naming}</h3>
-        <img src="${match.live_image}">
+        <img src="Pictures/${match.live_image}">
         <p>${match.live_news}</p>
         <p>${match.live_date}</p>
         <p>${match.live_time}</p>
