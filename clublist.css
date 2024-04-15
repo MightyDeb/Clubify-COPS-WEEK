@@ -128,9 +128,13 @@ body{
   
 }
 .subheading{
-  color: aquamarine;
+  color: white;
   padding: 0.7rem;
   text-decoration-line: underline;
+  background-color: orange;
+  border-radius: 15px;
+  border:3px solid white;
+  width: fit-content;
 }
 .images{
   margin-top: 1rem;

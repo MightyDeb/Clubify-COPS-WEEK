@@ -17,7 +17,6 @@ body{
   margin: 0 auto;
 
 }
-
 @keyframes blink {
   30% {
     opacity: 0.0;
