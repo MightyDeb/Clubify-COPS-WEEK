@@ -1,0 +1,341 @@
+.{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  padding-left:0;
+}
+body{
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  color: white;
+  background-color: black;
+  background-image: url("home-bg.jpg");
+}
+.container{
+  width: 76%;
+  margin: 0 auto;
+
+}
+
+@keyframes blink {
+  30% {
+    opacity: 0.0;
+  }
+}
+.btn_get_start {
+  margin-left: 15%;
+  animation: blink 1s step-start 0s infinite;
+}
+
+nav{
+  background-color: rgb(68, 5, 68);
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 11;
+}
+.nav_container{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_menu{
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.nav_menu a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+.nav_menu a:hover{
+  font: 1.2rem bolder;
+  color: olive;
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: pointer;
+}
+.nav_logo{
+    height:2rem;
+}
+
+.logo{
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 2rem;
+}
+.container_sp{
+  position: relative;
+  top: 4rem;
+  font-size: medium;
+  padding-left: 10rem;
+}
+.container_sp{
+
+  padding:2rem;
+}
+.sp_link{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+.sp_link:hover{
+  font-size: larger;
+  color: greenyellow;
+}
+
+.header_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 3rem;
+  overflow: hidden;
+  height: max-content;
+  background-color: purple;
+  padding:  0 0.5rem;
+  border-radius: 8px;
+}
+.header_part{
+  border: 5px solid whitesmoke;
+  padding: 0.8rem;
+  margin: 1rem;
+}
+.header_right_image{
+  border-radius: 1%;
+  margin: 0.7rem;
+}
+.btn{
+  background-color: red;
+  padding: 5px;
+  color: black;
+  border-radius: 5%;
+  font-size: 1.5rem;
+  align-items: center;
+  text-decoration-line: none;
+}
+.btn:hover{
+  color:aliceblue;
+  background-color: orangered;
+  font-size:1.6rem;
+  padding: 1%;
+}
+
+.container_categories{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 4rem;
+  position: relative;
+  top: 6rem;
+}
+.categories_right{
+
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 33% 34% 33%;
+  gap: 1rem;
+  
+}
+.category img{
+  max-height: 10rem;
+  max-width: auto;
+}
+.category{
+  border: white solid 5px; 
+  padding: 10px;
+  background-color: rgb(228, 55, 84);
+  text-align: center;
+}
+.category:hover{
+  background-color: black;
+  color: rgb(43, 125, 181);
+  transform: rotateZ(10deg);
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  font-size: 1.2rem;
+  padding: 5px;
+
+}
+
+.faqs_container{
+  position: relative;
+  top: 9rem;
+}
+.faqs_container h1{
+  text-align: center;
+  color: greenyellow;
+}
+.testimonials_container h1{
+  text-align: center;
+  color: greenyellow;
+}
+.question_answer{
+  background-color: purple;
+  border: white solid 2px;
+  padding: 0.3rem 1rem;
+}
+.answer{
+  display: none;
+}
+.faq{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.question_answer:hover{
+  background-color: rgb(18, 212, 148);
+  color:rgb(68, 5, 68);
+}
+.show-text p{
+  display: block;
+}
+.testimonials_container{
+  position: relative;
+  top: 12rem;
+  text-align: center;
+}
+.swiper{
+  background-color: paleturquoise;
+}
+.testimonial img{
+  margin-top:1rem;
+  max-height: 5rem;
+  max-width: fit-content;
+  border-radius: 50%;
+  border: solid 1px black;
+}
+.testimonial p{
+  background-color:;
+  color: rgb(3, 36, 3);
+  border-radius: 10px;
+  margin:2rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.footer_container{
+  position: relative;
+  top: 15rem;
+  left:0;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(68, 5, 68);
+  width: 100vw;
+  height: 14rem;
+  padding: 0.5rem;
+
+}
+
+.footer_container a{
+  text-decoration: none;
+  color: white;
+}
+.footer_container a:hover{
+  color: olive;
+  font-size: large;
+}
+.pic{
+  display: flex; justify-content: center;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+@media only screen and (max-width: 1380px){
+  .header_right{
+    display: none;
+  }
+  .btn_get_start{
+    margin-left: 1%;
+  }
+  .header_left{
+    text-align: center;
+  }
+  .header{
+    height: 25%;
+  }
+}
+
+@media only screen and (max-width: 1150px){
+  body{
+    text-align:center;
+  }
+  .container_categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .clublist_btn{
+    margin-left: 2%;
+  }
+}
+
+@media only screen and (max-width: 1060px){
+  .pic{
+    display: none;
+  }
+  .footer_container{
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 770px){
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .categories_right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav_logo{
+    display: none;
+  }
+  .logo h1{
+    font-size: 1rem;
+  }
+  .faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav_menu{
+    display: flex;
+    align-items: center;
+  }
+  
+}

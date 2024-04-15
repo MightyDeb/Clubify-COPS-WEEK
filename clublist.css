@@ -1,0 +1,254 @@
+.{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url("blue_bg.jpg");
+  background-size: cover;
+}
+.navbar{
+  background-color: skyblue;
+  color:rgb(2, 2, 34);
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: max-content;
+  padding: 1rem;
+  z-index: 11;
+}
+.filters{
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 15rem;
+}
+.btn{
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgb(255, 0, 0);
+  padding:0.5rem;
+  border: 3px solid snow;
+}
+.filter_btn:hover{
+  font-size: 1.3rem;
+  background-color: rgba(255, 0 , 0, 0.8);
+  font-weight: bolder;
+}
+
+.box{
+  display: none;
+}
+.show{
+  display: block;
+}
+
+.desc{
+  padding: 5px;
+  background-image: url("black_box.jpg");
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  height: max-content;
+  border: 2px dashed white;
+}
+.nav_menu{
+  color:azure;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.nav_menu a{
+  color:azure;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.nav_menu span:hover{
+  text-decoration: underline;
+  font-size: 1.4rem;
+}
+.nav_menu{
+  display: flex;
+  justify-content: space-evenly;
+}
+.sublist{
+  display: none;
+}
+.show-list ul{
+  display: inline;
+}
+
+.listed:hover{
+  cursor: pointer;
+}
+
+.content{
+  position: relative;
+  top: 15rem;
+  padding: 1rem;
+}
+.heading{
+  background-color: skyblue;
+  border: 2px solid white;
+  color:rgb(2, 2, 34);
+  font-size: 3rem;
+  width: fit-content;
+  padding: 0 0.7rem;
+  margin-left: 0.5rem;
+  margin-top: 2rem;
+  
+}
+.image img{
+  border-radius: 50%;
+  align-items: center;
+  width: 15rem;
+  border: 5px white solid;
+}
+.image img:hover{
+  width: 17rem;
+}
+.desc{
+  color: white;
+  text-align: center;
+  font-size: large;
+  overflow: 0;
+}
+.inside{
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 1rem;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  
+}
+.subheading{
+  color: aquamarine;
+  padding: 0.7rem;
+  text-decoration-line: underline;
+}
+.images{
+  margin-top: 1rem;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+.images img{
+  height: 30rem;
+  width:30rem;
+
+}
+.buttons{
+  margin: 1rem;
+}
+.interest:hover{
+  font-size: 1.5rem;
+}
+.uninterest:hover{
+  font-size: 1.5rem;
+}
+.interest{
+  background-color: rgb(36, 225, 36);
+  font-size: 1.4rem;
+  padding: 0.7rem;
+  color: white;
+  margin: 0 25%;
+}
+.uninterest{
+  background-color: red;
+  font-size: 1.4rem;
+  padding: 0.7rem;
+  color: white;
+  margin-left: 7%;
+}
+.home_link{
+  background-color: white;
+  border-radius: 50%;
+  width: 3.5rem;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+@media only screen and (max-width: 1457px){
+  body{
+    /* background-image: linear-gradient(blue,blue); */
+    display:flex;
+    flex-direction: column;
+    
+  }
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .inside{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-right:0;
+    padding: 0 5%;
+  }
+  .uninterest{
+    width: max-content;
+  }
+}
+@media only screen and (max-width: 1050px){
+  .inside{
+    margin-left: 5%;
+  }
+  .desc{
+    margin-left:4%;
+  }
+  .images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+}
+
+@media only screen and (max-width: 800px){
+  .inside{
+    margin-left: 0;
+  }
+  .desc{
+    margin-right: 2%;
+  }
+  .nav_menu{
+    padding-left: 0
+  }
+  .filters{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30%;
+  }
+}
+

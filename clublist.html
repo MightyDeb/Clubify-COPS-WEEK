@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLUBIFY/About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="clublist.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav_menu">
+      <span><a href="#e-cell">E-CELL</a></span>
+      <span class="listed"> F.M.C.
+        <ul class="sublist fmc_nav_list" style="list-style-type: none;">
+          <li><a href="#media">MEDIA</a></li>
+          <li><a href="#cine">CINE</a></li>
+          <li><a href="#photog">PHOTOG</a></li>
+          <li><a href="#outreach">OUTREACH</a></li>
+          <li><a href="#animation">ANIMATION</a></li>
+        </ul>
+      </span>
+      <span><a href="#sports">SPORTS</a></span>
+      <span class="listed"> S.N.T.C.
+        <ul class="sublist sntc_nav_list" style="list-style-type: none;">
+          <li><a href="#cops">COPS</a></li>
+          <li><a href="#robo">ROBOTICS</a></li>
+          <li><a href="#amc">AMC</a></li>
+          <li><a href="#sae">SAE</a></li>
+          <li><a href="#astro">ASTRONOMY</a></li>
+          <li><a href="#biz">BUSINESS</a></li>
+        </ul>
+      </span>
+      <span class="listed">CULTURAL
+          <ul class="sublist cult_nav_list" style="list-style-type: none;">
+            <li><a href="#imc">IMC</a></li>
+            <li><a href="#wmc">WMC</a></li>
+            <li><a href="#masq">MASQUERADES</a></li>
+            <li><a href="#dfz">DANCE</a></li>
+            <li><a href="#fac">FINE ARTS</a></li>
+            <li><a href="#quiz">QUIZ</a></li>
+            <li><a href="#lit">LIT</a></li>
+          </ul>
+      </span>
+      <span><a href="#scs">S.C.S.</a></span>
+      <span><a href="events.html">Go to Events</a></span>
+    </div>
+  </nav>
+  <div class="filters">
+    <button class="btn" onclick="filterObjects('all')">No Filters</button>
+    <button class="btn filter_btn" onclick="
+    filterObjects('coding')"><span class="material-symbols-outlined">
+      close
+      </span>CODING</button>
+    <button class="btn filter_btn" onclick="filterObjects('money')"><span class="material-symbols-outlined">
+      close
+      </span>ENTEPRENEURSHIP</button>
+    <button class="btn filter_btn" onclick="filterObjects('bollywood')"><span class="material-symbols-outlined">
+      close
+      </span>BOLLYWOOD</button>
+    <button class="btn filter_btn" onclick="filterObjects('space')"><span class="material-symbols-outlined">
+      close
+      </span>SPACE</button>
+    <button class="btn filter_btn" onclick="filterObjects('others')"><span class="material-symbols-outlined">
+      close
+      </span>OTHERS</button>
+    <button class="btn filter_btn" onclick="filterObjects('all'); filterObjects('leadership')"><span class="material-symbols-outlined">
+      close
+      </span>LEADERSHIP</button>
+  </div>
+
+  <div class="content">
+  <div class="e-cell box money" id="e-cell">
+    <h1 class="heading">ENTEPRENEURSHIP CELL</h1>
+    <div class="inside">
+      <article class="image">
+        <img src="e-cell.png">
+      </article>
+      <article class="desc">
+        E-CELL IIT BHU (The Entrepreneurship Cell) supports entrepreneurship through resources, mentorship, networking, and events like workshops, competitions, and speaker sessions and fosters the overall startup ecosystem in the institute.
+
+          It is an institute body run by students devoted to acting as a link between budding entrepreneurs and the existing startup ecosystem. It is a hub where all startups can meet, collaborate and innovate.
+        
+        It fosters entrepreneurial mindset, improves interpersonal skills and helps build network with startup ecosystem.
+      </article>
+    </div>
+    <div class="buttons">
+      <button class="interest" data-classname="e-cell">INTERESTED</button>
+      <button class="uninterest" data-classname="e-cell">NOT INTERESTED</button>
+    </div>
+  </div>
+  <div class="fmc box bollywood others" id="fmc">
+    <h1 class="heading">FILM AND MEDIA COUNCIL</h1>
+    <article class="desc">
+      The Film and Media Council of IIT (BHU) encompasses all the activities of film, media, and digital arts genres. It comprises six clubs, namely Design, Photography, Cinematography, Animation, Media, and Social Outreach. It is an amazing amalgamation of various clubs which serve as a learning area for freshers and all those who are interested in working behind the camera or have a passion for writing. FMC Weekend is the annual film and digital arts festival organized by the Film and Media Council. FMC Weekend is a first-of-its-kind festival in the country, providing a platform of national stature to college students across India to showcase their creative side, participate in various online and offline events, and increase their knowledge through the workshops and guest talks that are conducted during the FMC Weekend. In addition to the above, open-air movie screenings are organized every evening, which is the highlight of the three-day fest.
+      
+    </article>
+    
+    <div class="animation box bollywood" id="animation">
+      <h2 class="subheading">ANIMATION CLUB</h2>
+      <div class="inside">
+        
+        <article class="image">
+          <img src="animation_img.jpg" >
+        </article>
+        <article class="desc">
+          The club provides a platform to those who wish to explore the world of animation. The club activities involve development of 3D models using various softwares, making of short animated films (both 2D and 3D). We deal with various softwares some of which are : 3ds max, Toon Boom Animate Pro, Adobe Flash, Premier Pro, boujou, After Effects.
+        </article>
+      </div>
+      <div class="buttons">
+        <button class="interest" data-classname="animation">INTERESTED</button>
+        <button class="uninterest"  data-classname="animation">NOT INTERESTED</button>
+      </div>
+    </div>
+    <div class="cine box bollywood" id="cine">
+      <h2 class="subheading">CINE CLUB</h2>
+      <div class="inside">
+        
+      <article class="image">
+        <img src="cine_img.jpg" >
+      </article>
+      <article class="desc">
+The subtle science of filmmaking is not achievable without prolific imagination and a zeal of passion. We at Cine Club, IIT BHU provide a boat to the islands of this art. We tunnel the clubs' functioning and activities through various events. Cinematography, Screenwriting, Casting, Shooting, Sound recording, Production, and Editing are the aspects which are thoroughly studied during the clubs' overall walkthrough. Film Club takes interest in a variety of work ranging from short films, skits, sketches to documentaries.
+      </article>
+      </div>
+      <div class="buttons">
+        <button class="interest" data-classname="cine">INTERESTED</button>
+        <button class="uninterest" data-classname="cine">NOT INTERESTED</button>
+      </div>
+    </div>
+    <div class="photog box bollywood" id="photog">
+      <h2 class="subheading">PHOTOGRAPHY CLUB</h2>
+      <div class="inside">
+        
+      <article class="image">
+        <img src="photog_img.jpg" >
+      </article>
+      <article class="desc">
+        The Photography Club is a crew of shutterbugs whose mission is to preach, practise and master the art of photography for the shared benefit of the self as well as the campus community. The club has its own studio with a vast variety of equipment and boasts a bevvy of breathtaking pictures. At the Photography Club, we hold interactive lecture series and workshops for the beginners followed by fun photo-walks in and out of Varanasi. To make the amateurs comfortable with DSLR handling, we give them hands-on experience through the coverage of the most glamorous events in the fests that are conducted in the campus.
+      </article>
+      </div>
+      <div class="buttons">
+        <button class="interest" data-classname="photog">INTERESTED</button>
+        <button class="uninterest" data-classname="photog">NOT INTERESTED</button>
+      </div>
+    </div>
+  
+  <div class="media box others" id="media">
+    <h2 class="subheading">MEDIA CLUB</h2>
+    <div class="inside">
+      <article class="image">
+        <img src="media_img.jpg">
+      </article>
+      <article class="desc">
+        Media Club provides coverage for all types of on and off campus activities and events. The Club is also responsible for promoting IITBHU locally and internationally using various media channels. The Club is mainly run by students as contributors of stories, photos, videos and newsworthy articles. Media Club provides students with the opportunity to express their ideas and talent through media, communication and journalism.
+
+        The main purpose of the Media Club is to give the opportunity to the students to be creative in media. 
+    </div>
+    <div class="buttons">
+      <button class="interest" data-classname="media">INTERESTED</button>
+      <button class="uninterest" data-classname="media">NOT INTERESTED</button>
+    </div>
+  </div>
+  <div class="outreach box others" id="outreach">
+    <h2 class="subheading">OUTREACH CLUB</h2>
+    <div class="inside">
+      <article class="image">
+        <img src="outreach_img.png">
+      </article>
+      <article class="desc">
+        The aim of the club is to enable the students to learn social responsibility. The club focuses of helping the neighbouring communities to transform themselves through programmes like literacy, health promotion, women empowerment, youth clubs and reduction of dropouts in schools. Special programmes/activities will be conducted to promote youth welfare, Women empowerment, Health sanitation and clean environment. The club also captures the highlights of the campus events.
+      </article>
+    </div>
+    <div class="buttons">
+      <button class="interest" data-classname="outreach">INTERESTED</button>
+      <button class="uninterest" data-classname="outreach">NOT INTERESTED</button>
+    </div>
+  </div>
+</div>
+  <div class="sports box others" id="sports">
+    <h1 class="heading">GAMES AND SPORTS COUNCIL</h1>
+    <article class="desc">
+      Games and Sports Council is the voice and face of IIT Kanpur sports community, responsible for management and conduction of all sporting events in the campus. A legacy of a determined struggle and expression of selfless passion! Games and Sports Council, a p e Students’ Gymkhana is responsible for management and conduction of sporting events in the campus and to support the desires of everyone to pursue a sport of their choice. The council strives to promote the involvement and participation of the campus junta in sports. The council is a perfect reach for everybody, whether you want to play a sport for recreation or for representing the institute, or take part in the interesting club activities, or participate in the intensive workshops conducted throughout the year.
+
+      To develop the sports person in you, in whatever sport you feel like, all you need to do is put your sports gear on and reach the desired venue; our system is backed up by a set of highly professional coaches and sufficient logistics for everyone. 
+    </article>
+    <article class="images">
+      <img src="sports1_img.jpg">
+      <img src="sports2_img.jpg">
+      <img src="sports3_img.jpg">
+      <img src="sports4_img.jpg">
+      <img src="sports5_img.jpg">
+      <img src="sports6_img.jpg">
+    </article>
+    <div class="buttons">
+      <button class="interest" data-classname="sports">INTERESTED</button>
+      <button class="uninterest" data-classname="sports">NOT INTERESTED</button>
+    </div>
+  </div>
+  <div class="cult box bollywood leadership others" id="cult">
+    <h1 class="heading">CULTURAL COUNCIL</h1>
+    <article class="desc">
+      The Cultural Council, IIT (BHU), is one of the oldest councils of the Gymkhana. Encompassing seven clubs, the Cultural Council organizes workshops, activities, and events like the Cultural Weekend. Kashiyatra, the annual socio-cultural festival of the Cultural Council, witnesses a footfall of over sixty thousand students from around two hundred colleges across the country. It celebrates music, dance, theatre, literature, quizzing, and fine arts through myriad competitions that draw huge participation. Kashiyatra has been associated with organizations like PETA and Kashi Utkarsh—a club of student volunteers of IIT (BHU)—to work against various social problems, with the intention of transforming the society into a better one. Kashiyatra also fulfils its social obligations through events like ‘Run for Cancer’—a marathon for spreading general awareness about cancer. Kashiyatra has been blessed to have received warm regards and best wishes from none other than the Prime Minister of India, Shri Narendra Modi.
+    </article>
+    <div class="wmc box others" id="wmc">
+      <h2 class="subheading">WESTERN MUSIC CLUB</h2>
+      <div class="inside">
+        <article class="image">
+          <img src="wmc_iitbhu.jpg">
+        </article>
+        <article class="desc">
+          From brutal breakdowns to soothing melodies, we are the Western Music Club, IIT (BHU). Our objectives are to encourage talent in music- instrumental as well as vocal,
+          to help students retain and enhance their own, individual love of music and to
+          develop career in dancing profession those who have the passion for music.
+        </article>
+      </div>
+      <div class="buttons">
+        <button class="interest" data-classname="wmc">INTERESTED</button>
+        <button class="uninterest" data-classname="wmc">NOT INTERESTED</button>
+      </div>
+    </div>
+      <div class="imc box bollywood" id="imc">
+        <h2 class="subheading">INDIAN MUSIC CLUB</h2>
+        <div class="inside">
+          <article class="image">
+            <img src="imc_img.jpg">
+          </article>
+          <article class="desc">
+            We, the Indian Music Club, popularly called IMC, are amongst the most active clubs of IIT BHU. We are a dedicated but musically diversified group of people who love to appreciate music from all the genres, some of them being Hindustani, Bollywood, Rock, Progressive, Blues, Metal and Rap. It encourages talent in Indian classical music- instrumental as well as vocal.
+          </article>
+        </div>
+        <div class="buttons">
+          <button class="interest" data-classname="imc">INTERESTED</button>
+          <button class="uninterest" data-classname="imc">NOT INTERESTED</button>
+        </div>
+      </div>
+        <div class="masq box bollywood" id="masq">
+          <h2 class="subheading">MASQUERADES CLUB</h2>
+          <div class="inside">
+            <article class="image">
+              <img src="masq_img.jpg">
+            </article>
+            <article class="desc">
+              The Masquerades Club functions to keep alive the unique art of theatre and to convey its delight and force to youngsters. It helps youngsters experience the energy of theatrical expressions and seeks to instil emotional intelligence, social abilities, inclusive attitude, tolerance and the capacity for team work. The club organizes activities like theatre seminars, workshops, performance of plays and competitions. Competitions in one-act play, mime, skit and script writing are conducted by the club. Programmes in memory of great actors and playwrights are also organized by the club. 
+            </article>
+          </div>
+          <div class="buttons">
+            <button class="interest" data-classname="masq">INTERESTED</button>
+            <button class="uninterest" data-classname="masq">NOT INTERESTED</button>
+          </div>
+        </div>
+          <div class="dfz box bollywood" id="dfz">
+            <h2 class="subheading">DANCE FREAKZ CLUB</h2>
+            <div class="inside">
+              <article class="image">
+                <img src="dfz_img.png">
+              </article>
+              <article class="desc">
+                We are one of the most active clubs of IIT BHU with the events well spread over the year. Our ambition is to be the most exciting, glamorous and breathtaking. Working on the principle: learn, teach and perform many beginners go on to become an integral part of the Dance Club and this art becomes an integral part of their life. We perform a variety of dance forms and we have been participating and winning in many inter-college festivals. Our club is a big one with over 100 members, our events are amongst the most awaited events and the audience turnout is always overwhelming.
+              </article>
+            </div>
+            <div class="buttons">
+              <button class="interest" data-classname="dfz">INTERESTED</button>
+              <button class="uninterest" data-classname="dfz">NOT INTERESTED</button>
+            </div>
+          </div>
+            <div class="fac box others" id="fac">
+              <h2 class="subheading">FINE ARTS CLUB</h2>
+              <div class="inside">
+                <article class="image">
+                  <img src="fac_img.jpg">
+                </article>
+                <article class="desc">
+                  The Fine Arts Club is a committed team of artists who strive to promote the various forms of fine art amongst the campus junta. At the Fine Arts Club, we believe that art lets us free ourselves and discover ourselves within. We work towards building a forum that fosters growth among the budding artists in the campus. The club persistently tries to lend out a hand to make a positive impact amongst the community, bringing out cognizance over the present-day social issues through our expertise in art.
+                </article>
+              </div>
+              <div class="buttons">
+                <button class="interest" data-classname="fac">INTERESTED</button>
+                <button class="uninterest" data-classname="fac">NOT INTERESTED</button>
+              </div>
+            </div>
+              <div class="quiz box others" id="quiz">
+                <h2 class="subheading">QUIZ CLUB</h2>
+                <div class="inside">
+                  <article class="image">
+                    <img src="quiz_img.png">
+                  </article>
+                  <article class="desc">
+                    We at the Quiz Club welcome all those with the pathological problem of knowing a lot of stuff and others too. The club aims to introduce the campus community to the joys of quizzing, question framing and if you’ve never answered questions that don’t pertain to academics, don’t worry, we’re here to teach you how to quiz and how to make a quiz too!
+                    The Club has introduced many new quizzes for the campus community in order to enhance its reach and participation. 
+                  </article>
+                </div>
+                <div class="buttons">
+                  <button class="interest" data-classname="quiz">INTERESTED</button>
+                  <button class="uninterest" data-classname="quiz">NOT INTERESTED</button>
+                </div>
+              </div>
+                <div class="lit box leadership" id="lit">
+                  <h2 class="subheading">LIT CLUB</h2>
+                  <div class="inside">
+                    <article class="image">
+                      <img src="lit_img.jpg">
+                    </article>
+                    <article class="desc">
+                      Being able to articulate one’s thoughts accurately is a skill that is hard to acquire but extremely valuable. 
+                      The Literature Society is a group of individuals passionate about exchanging ideas, discussing difficult topics, and of course, debating. We’d like to share this fun and worthwhile activity with the campus community.
+                    </article>
+                  </div>
+                  <div class="buttons">
+                    <button class="interest" data-classname="lit">INTERESTED</button>
+                    <button class="uninterest" data-classname="lit">NOT INTERESTED</button>
+                  </div>
+                </div>
+  </div>
+  <div class="sntc box coding others space money" id="sntc">
+    <h1 class="heading">SCIENCE AND TECHNOLOGY COUNCIL</h1>
+    <article class="desc">
+      Science and Technology Council, IIT (BHU) Varanasi encompasses all the clubs, technical teams and centres of IIT (BHU) Varanasi which cater to the technical interests of the students. In other words, it's the "geek hub"​ of the institute. From robotics and aeromodelling to astronomy and programming, the council offers a learning platform for all topics that intrigue science enthusiasts. The council aims at imparting technical knowledge to the students and allowing them to showcase their creativity and innovation in both national and international events. The council hosts the annual techno-management fest of the institute, Technex, which is a platform for the students to compete at a national level and demonstrate their technical brilliance.
+    </article>
+    <div class="cops box coding " id="cops">
+      <h2 class="subheading">CLUB OF PROGRAMMERS</h2>
+      <div class="inside">
+        <article class="image">
+          <img src="cops_img.jpg">
+        </article>
+        <article class="desc">
+          Empower yourself with the knowledge and skills of a top-notch programmer through the Club of Programmers at IIT BHU. Our club is dedicated to fostering a passion for computer programming among students and providing opportunities for hands-on learning and engagement. From participating in coding competitions and projects, to learning from industry experts through guest lectures, to sharpening your skills through workshops, the Club of Programmers at IIT BHU is your ticket to the world of computer programming. Whether you are a seasoned programmer or just starting out, join us in our mission to push the boundaries of technology and revolutionize the world through code.
+        </article>
+      </div>
+      <div class="buttons">
+        <button class="interest" data-classname="cops">INTERESTED</button>
+        <button class="uninterest" data-classname="cops">NOT INTERESTED</button>
+      </div>
+    </div>
+    <div class="robo box coding" id="robo">
+      <h2 class="subheading">ROBOTICS CLUB</h2>
+      <div class="inside">
+        <article class="image">
+          <img src="robo_img.png">
+        </article>
+        <article class="desc">
+          Our club is dedicated to empowering students with the knowledge and skills necessary to thrive in the rapidly-evolving field of robotics. Whether you are a seasoned robotics enthusiast or just starting out, you all will find a wealth of opportunities for learning and growth within our club. From participating in hands-on projects and workshops, to learning from industry experts through guest lectures, to competing in coding competitions, the Robotics Club at IIT BHU is your launchpad for a successful career in robotics.
+        </article>
+      </div>
+      <div class="buttons">
+        <button class="interest" data-classname="robo">INTERESTED</button>
+        <button class="uninterest" data-classname="robo">NOT INTERESTED</button>
+      </div>
+    </div>
+    <div class="sae box others" id="sae">
+      <h2 class="subheading">CLUB OF AUTOMOTIVE ENGINEERS</h2>
+      <div class="inside">
+        <article class="image">
+          <img src="sae_img.jpg">
+        </article>
+        <article class="desc">
+          Our club is dedicated to providing students with a deep understanding of engineering technology and design principles, and empowering them with the skills necessary to succeed in this exciting field. Whether you are a seasoned engineer or just starting out, you all will find a wealth of opportunities for learning and growth within our club. From participating in hands-on projects and workshops, to learning from industry experts through guest lectures, to competing in design competitions, the SAE Club at IIT BHU is your launchpad for a successful career in engineering.
+        </article>
+      </div>
+      <div class="buttons">
+        <button class="interest" data-classname="sae">INTERESTED</button>
+        <button class="uninterest" data-classname="sae">NOT INTERESTED</button>
+      </div>
+    </div>
+    <div class="amc box space" id="amc">
+      <h2 class="subheading">AEROMODELLING CLUB</h2>
+      <div class="inside">
+        <article class="image">
+          <img src="aero_img.png">
+        </article>
+        <article class="desc">
+          Unleash your potential in aeronautics and aerospace engineering with the Aero Club at IIT BHU. Learn through hands-on projects, workshops and expert talks. Explore the limitless possibilities of the field and develop your skills to new heights. The Aero Club provides a platform for students to tap into their potential and ignite their passion for this exciting field.
+        </article>
+      </div>
+      <div class="buttons">
+        <button class="interest" data-classname="amc">INTERESTED</button>
+        <button class="uninterest" data-classname="amc">NOT INTERESTED</button>
+      </div>
+    </div>
+    <div class="astro box space" id="astro">
+      <h2 class="subheading">ASTRONOMY CLUB</h2>
+      <div class="inside">
+        <article class="image">
+          <img src="astroiitbhu_logo.jpg">
+        </article>
+        <article class="desc">
+          Discover the mysteries of the cosmos with the Astro Club at IIT BHU. Our club is dedicated to fostering a love for astronomy and astrophysics among students, providing opportunities for hands-on learning and engagement. From observing the stars and celestial bodies through observation sessions, to gaining knowledge from industry experts during guest lectures, to participating in workshops and expanding your skills, the Astro Club at IIT BHU offers a unique and exciting journey through the universe. Explore the wonders of the cosmos and let your imagination soar to the stars.
+        </article>
+      </div>
+      <div class="buttons">
+        <button class="interest" data-classname="astro">INTERESTED</button>
+        <button class="uninterest" data-classname="astro">NOT INTERESTED</button>
+      </div>
+    </div>
+    <div class="biz box money" id="biz">
+      <h2 class="subheading">BUSINESS CLUB</h2>
+      <div class="inside">
+        <article class="image">
+          <img src="biz.jpg">
+        </article>
+        <article class="desc">
+          Empower yourself with the knowledge and skills to succeed in the business world through the Business Club at IIT BHU. Our club is dedicated to promoting an understanding of the business landscape and providing students with the tools necessary to succeed in the competitive and rapidly-changing world of business. From guest lectures by industry leaders to hands-on projects and workshops, students can gain a well-rounded understanding of the business world and develop the skills necessary to thrive in the workplace.Join us in our mission to equip the next generation of business leaders with the knowledge and skills necessary to succeed in the global marketplace.
+        </article>
+      </div>
+      <div class="buttons">
+        <button class="interest" data-classname="biz">INTERESTED</button>
+        <button class="uninterest" data-classname="biz">NOT INTERESTED</button>
+      </div>
+    </div>
+  </div>
+  <div class="scs box leadership" id="scs">
+    <h1 class="heading">STUDENTS COUNSELLING SERVICES</h1>
+    <article class="desc">
+      The Student Counselling Services (SCS), also known as “SAKHA”, is an Institute level faculty-student body at IIT(BHU). It consists of 10 faculty members and 200+ students primarily focused on the holistic development of 8000+ students on campus. 
+
+In order to tackle the diverse issues faced by the student community, SCS has 5 councils - wellness, academics, career, skill development and international exchange, with specialised verticals in public relations, publicity, and finance. SCS collaboratively works with the Institute Wellness Partner - YourDost, with a vast number of counsellors to facilitate the counselling needs of every student, from the comfort of their hostel dorms. 
+
+Over the span of four years, SCS has conducted 300+ events, with a content library of 250+ videos on its YouTube channel, and a lifetime watch time of 1M+ minutes with a subscriber base of 1.7K.
+    </article>
+    <div class="wellness box leadership">
+      <h2 class="subheading">WELLNESS COUNCIL</h2>
+      <div class="inside">
+        <article class="image">
+          <img src="wellness_council_iit_bhu_varanasi_logo.jpg">
+        </article>
+        <article class="desc">
+          The Wellness Council works to promote the mental, physical and emotional wellness of students under the aegis of the Student Counselling Services (SAKHA), IIT(BHU), by building habit communities and promoting values of mindfulness, gratitude, and forgiveness. In order to tackle the issues related to wellness faced by the student community, the Wellness Council has flagship initiatives like Life's Tiny Wins, Heart Out, Mental Health Awareness Week, 21-Days Habit Challenges, IITBHUREADS.
+        </article>
+      </div>
+      <div class="buttons">
+        <button class="interest" data-classname="wellness">INTERESTED</button>
+        <button class="uninterest" data-classname="wellness">NOT INTERESTED</button>
+      </div>
+    </div>
+    <div class="academic box leadership">
+      <h2 class="subheading">ACADEMIC COUNCIL</h2>
+      <div class="inside">
+        <article class="image">
+          <img src="academics_council_iit_bhu_logo.jpg">
+        </article>
+        <article class="desc">
+          The Academics Council is an Institute level faculty-student body at IIT BHU. It consists of 2 Faculty Coordinators and 18+ students primarily focused on the holistic development of 8000+ students on campus.
+
+The Academics Council works to help students of all years with the various academic problems that they face throughout their college life. In order to tackle these problems the Academics Council has flagship initiatives like Noteflix, discipline change sessions and remedial classes.
+        </article>
+      </div>
+      <div class="buttons">
+        <button class="interest" data-classname="academic">INTERESTED</button>
+        <button class="uninterest" data-classname="academic">NOT INTERESTED</button>
+      </div>
+    </div>
+    <div class="career box leadership" >
+      <h2 class="subheading">CAREER COUNCIL</h2>
+      <div class="inside">
+        <article class="image">
+          <img src="career_council_iit_bhu_varanasi_logo.jpg">
+        </article>
+        <article class="desc">
+          We aim to provide step-by-step guidance for various career profiles, help you pick the profile you are interested in, and create a holy environment on our campus that enables every student to explore all suitable career paths. Everyone desires to possess knowledge of their interests and turn them into viable career options; each individual is unique and excels in specific fields. We assist in discovering those passions or building upon them.
+        </article>
+      </div>
+      <div class="buttons">
+        <button class="interest" data-classname="career">INTERESTED</button>
+        <button class="uninterest" data-classname="career">NOT INTERESTED</button>
+      </div>
+    </div>
+    <div class="intn box leadership">
+      <h2 class="subheading">INTERNATIONAL EXCHANGE COUNCIL</h2>
+      <div class="inside">
+        <article class="image">
+          <img src="international_exchange_council_iit_bhu_logo.jpg">
+        </article>
+        <article class="desc">
+          We aim to provide comprehensive assistance and support to students engaging in international internships or research, as well as foreign students visiting the campus. Understanding the significance of cultural, linguistic, and customs differences, the IE council strives to bridge the gap and facilitate a smooth transition for students.
+        </article>
+      </div>
+      <div class="buttons">
+        <button class="interest" data-classname="intn">INTERESTED</button>
+        <button class="uninterest" data-classname="intn">NOT INTERESTED</button>
+      </div>
+    </div>
+    <div class="skills box leadership">
+      <h2 class="subheading">SKILL DEVELOPMENT COUNCIL</h2>
+      <div class="inside">
+        <article class="image">
+          <img src="skill_development_council_iit_bhu_logo.jpg">
+        </article>
+        <article class="desc">
+          We help students in their personality development by enabling them to explore their hobbies and interests. We aim to equip students with the necessary soft and hard skills that are required for different career opportunities and ace in life. Major flagship initiatives include Speak Up!, Exhort series, commando talks, bootcamps and a lot more.
+
+        </article>
+      </div>
+      <div class="buttons">
+        <button class="interest " data-classname="skills">INTERESTED</button>
+        <button class="uninterest" data-classname="skills">NOT INTERESTED</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="icon">
+    <a href="home.html"><img src="home_icon.png" class="home_link"></a>
+  </div>
+
+  <script src="clublist.js"></script>
+  <script src="events.js"></script>
+</body>

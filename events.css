@@ -1,0 +1,131 @@
+.{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  padding-left:0;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("events_bg.avif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+}
+.heading{
+  color: rgb(161, 6, 32); 
+  background-color: pink;
+  width: 40rem;
+  text-align: center;
+  padding: 0.4rem;
+}
+.interested{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  
+}
+.live {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  
+}
+.box{
+  width: 80%;
+  border: 0.5rem solid pink;
+  margin: 1rem;
+  padding:1rem;
+  text-align: center;
+  font-size: larger;
+}
+.box h3{
+  color: purple;
+  font-size: 2rem;
+  background-color: pink;
+}
+.box p{
+  background-color: palevioletred;
+  margin:0;
+  padding:0.1rem 0;
+}
+.box img{
+  border: 5px solid pink;
+  width: 20rem;
+  height: 20rem;
+  margin-bottom: 1rem;
+}
+.box:hover{
+  padding: 0.5rem;
+}
+.interest:hover{
+  background-color: rgb(121, 8, 8);
+  padding: 2rem;
+}
+.home_link{
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 3.5rem;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index:10;
+}
+.club_link{
+  background-color: white;
+  border:2px solid white;
+  border-radius: 50%;
+  width: 3.5rem;
+  position: fixed;
+  bottom: 100px;
+  right: 15px;
+  z-index:10;
+}
+
+@media only screen and (max-width: 1245px){
+  body{
+    background-color: rgb(104, 4, 104);
+    background-image: none;
+  }
+  .interested{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    
+  }
+  .live {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 835px){
+  .live {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+  }
+  .heading{
+    width: max-content;
+    padding:1rem;
+    border: 3px solid white;
+  }
+}
