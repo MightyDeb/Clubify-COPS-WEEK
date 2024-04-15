@@ -9,7 +9,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("events_bg.avif");
+  background-image: url("Pictures/events_bg.avif");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: white;
