@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body{
-  background-image: url("blue_bg.jpg");
+  background-image: url("Pictures/blue_bg.jpg");
   background-size: cover;
 }
 .navbar{
@@ -49,7 +49,7 @@ body{
 
 .desc{
   padding: 5px;
-  background-image: url("black_box.jpg");
+  background-image: url("Pictures/black_box.jpg");
   border-radius: 10px;
   text-align: center;
   justify-content: center;
